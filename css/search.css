@@ -1,0 +1,19 @@
+button {
+    color: green;
+    border-color: red;
+    border-width: 3px;
+    border-style: dashed;
+}
+
+body {
+    background: rgb(200,255,190);
+    display: flex;
+    align-items: center;
+    justify-content: counter;
+    height: 90vh;
+}
+
+input {
+    color: red;
+    background-color: black;
+}
