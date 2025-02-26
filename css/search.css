@@ -3,12 +3,16 @@
 }
 
 .searchDiv .searchButton {
-    color: green;
+    postition: absolute;
+    color: red;
     border-color: red;
     border-width: 3px;
     border-style: dashed;
     width: 50px;
     height: 50px;
+    background: black;
+    cursor: pointer;
+    left: 0px;
 }
 
 body {
@@ -30,4 +34,23 @@ body {
     padding: 20px;
     border-width: 5px;
     height: 50px;
+    width: 50px;
+}
+
+.searchDiv .searchInput:focus {
+    background: white;
+    color: black;
+    border-color: black;
+    outline: none;
+}
+
+.searchDiv .searchButton:focus {
+    background: white;
+    color: black;
+    border-color: black;
+    outline: none;
+}
+
+.searchDiv.active .searchInput {
+
 }
