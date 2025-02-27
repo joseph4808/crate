@@ -1,5 +1,12 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
 .bg {
-    background-image: url("");
+    background-image: url("../images/mountain.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
