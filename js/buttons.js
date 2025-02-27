@@ -1,7 +1,7 @@
-const tLButton = document.querySlect(".tbOne");
-const tRButton = document.querySlect(".tbTwo");
-const bLButton = document.querySlect(".bbOne");
-const bRButton = document.querySlect(".bbTwo");
+const tLButton = document.querySelector(".tbOne");
+const tRButton = document.querySelector(".tbTwo");
+const bLButton = document.querySelector(".bbOne");
+const bRButton = document.querySelector(".bbTwo");
 
-tLButton.style.background-color = "red";
+tLButton.style.background = "red";
 
