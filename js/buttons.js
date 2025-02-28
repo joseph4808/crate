@@ -6,23 +6,23 @@ const bRButton = document.querySelector(".bbTwo");
 let num1 = 1;
 let color1 = "white";
 
-tLButton.onclick = changeColor(num1, color1);
+tLButton.onclick = changeColor();
 
-function changeColor(num, color){
+function changeColor(){
 
-    switch(num){
+    switch(num1){
         case 1:
-            color = "red";
-            num++;
+            color1 = "red";
+            num1++;
             break;
         case 2:
-            color = "blue";
-            num++;
+            color1 = "blue";
+            num1++;
             break;
         case 3:
-            color = "green";
-            num = 0;
+            color1 = "green";
+            num1 = 0;
             break;
     }
-    tLButton.style.background = color;
+    tLButton.style.background = color1;
 }
