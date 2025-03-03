@@ -1,12 +1,13 @@
-const tLButton = document.querySelector(".tbOne");
-const tRButton = document.querySelector(".tbTwo");
-const bLButton = document.querySelector(".bbOne");
-const bRButton = document.querySelector(".bbTwo");
+const buttons = document.querySelectorAll(".button");
 
 let num1 = 0;
 let color1 = "white";
 
-tLButton.onclick = changeColor();
+buttons.forEach(button => {
+    button.addListener("click", ()=>{
+        changeColor();
+    })
+})
 
 function changeColor(){
     num1++;
@@ -24,3 +25,5 @@ function changeColor(){
     }
     tLButton.style.background = color1;
 }
+
+
