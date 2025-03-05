@@ -34,7 +34,7 @@ body {
     padding: 20px;
     border-width: 5px;
     height: 50px;
-    width: 50px;
+    width: 200px;
 }
 
 .searchDiv .searchInput:focus {
@@ -49,8 +49,4 @@ body {
     color: black;
     border-color: black;
     outline: none;
-}
-
-.searchDiv.active .searchInput {
-
 }
