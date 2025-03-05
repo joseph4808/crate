@@ -76,10 +76,10 @@ function updateDisplay(){
     display.innerText = `Clicks: ${displayCount}`;
 }
 
-returnGameComplete(){
+function returnGameComplete(){
     return(((colorId[0]+colorId[1]+colorId[2]+colorId[3])/colorId[0] == 4) && ((colorId[0]+colorId[1]+colorId[2]+colorId[3])/colorId[1] == 4) && ((colorId[0]+colorId[1]+colorId[2]+colorId[3])/colorId[2] == 4) && ((colorId[0]+colorId[1]+colorId[2]+colorId[3])/colorId[3] == 4));
 }
 
-gameComplete(){
-    
+function gameComplete(){
+
 }
