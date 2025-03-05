@@ -5,7 +5,7 @@ const buttonDiv = document.querySelector(".buttons")
 var num = [getRndInteger(1, 5), getRndInteger(1, 5), getRndInteger(1, 5), getRndInteger(1, 5)];
 var color = ["white", "white", "white", "white"];
 var displayCount = 0;
-var 
+var colorId = [0, 0, 0, 0];
 
 changeColor(0, 0, buttons[0])
 changeColor(1, 1, buttons[1])
@@ -15,6 +15,9 @@ changeColor(3, 3, buttons[3])
 buttons[0].addEventListener("click", ()=>{
     changeColor(1, 1, buttons[1]);
     updateDisplay()
+    if(returnGameComplete() == true){
+
+    }
 })
 buttons[1].addEventListener("click", ()=>{
     changeColor(2, 2, buttons[2]);
@@ -32,22 +35,27 @@ buttons[3].addEventListener("click", ()=>{
 })
 
 
-function changeColor(numm, colorr, button){
+function changeColor(numm, colorr, button, id){
     switch(num[numm]){
         case 1:
             color[colorr] = "red";
+            colorId[id] = 1;
             break;
         case 2:
             color[colorr] = "blue";
+            colorId[id] = 2;
             break;
         case 3:
             color[colorr] = "green";
+            colorId[id] = 3;
             break;
         case 4:
             color[colorr] = "pink";
+            colorId[id] = 4;
             break;
         case 5:
             color[colorr] = "cyan";
+            colorId[id] = 5;
     }
     if(num[numm] == 5){
         num[numm] = 1;
@@ -67,3 +75,9 @@ function updateDisplay(){
     displayCount++;
     display.innerText = `Clicks: ${displayCount}`;
 }
+
+returnGameComplete(){
+    return(((colorId[0]+colorId[1]+colorId[2]+colorId[3])/colorId[0] == 4) && ((colorId[0]+colorId[1]+colorId[2]+colorId[3])/colorId[1] == 4) && ((colorId[0]+colorId[1]+colorId[2]+colorId[3])/colorId[2] == 4) && ((colorId[0]+colorId[1]+colorId[2]+colorId[3])/colorId[3] == 4));
+}
+
+
