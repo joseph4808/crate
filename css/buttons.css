@@ -28,13 +28,13 @@ body {
     opacity: 0;
     height: 0vh;
     width: 0vw;
-    background-color: white;
+    background-color: red;
     z-index: 100;
     transition: opacity 1s ease .2s;
 }
 
 .complete .yay {
-    transition: opacity 1.5s ease 3s;
+    background-color: red;
     position: relative;
 }
 
