@@ -23,18 +23,18 @@ body {
 }
 
 .complete {
+    justify-content: center;
     position: absolute;
     opacity: 0;
-    display: flex;
     height: 0vh;
     width: 0vw;
     background-color: white;
     z-index: 100;
-    transition: opacity 1.5s ease .8s;
+    transition: opacity 1s ease .2s;
 }
 
-.yay {
-    transition: all 2s ease 1s;
-    position absloute;
+.complete .yay {
+    transition: opacity 1.5s ease 3s;
+    position: relative;
 }
 

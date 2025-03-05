@@ -10,10 +10,10 @@ var color = ["white", "white", "white", "white"];
 var displayCount = 0;
 var colorId = [0, 0, 0, 0];
 
-changeColor(0, 0, buttons[0])
-changeColor(1, 1, buttons[1])
-changeColor(2, 2, buttons[2])
-changeColor(3, 3, buttons[3])
+changeColor(0, 0, buttons[0], 0)
+changeColor(1, 1, buttons[1], 1)
+changeColor(2, 2, buttons[2], 2)
+changeColor(3, 3, buttons[3], 3)
 
 buttons[0].addEventListener("click", ()=>{
     changeColor(1, 1, buttons[1], 1);
@@ -97,7 +97,7 @@ function gameComplete(){
     completeDis.innerHTML = "<h1 class=&quotyay&quot>YOU DID IT!!!!!</h1>";
     completeDis.style.zIndex = "100";
     completeDis.style.height = "80vh";
-    completeDis.style.height = "80vw";
+    completeDis.style.width = "80vw";
     yay.style.opacity = "1";
-    yay.style.top = "50px";
+    yay.style.top = "50vh";
 }
