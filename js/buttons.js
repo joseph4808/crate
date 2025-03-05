@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll(".button");
 const display = document.querySelector(".display")
+const buttonDiv = document.querySelector(".buttons")
 
 var num = [getRndInteger(1, 5), getRndInteger(1, 5), getRndInteger(1, 5), getRndInteger(1, 5)];
 var color = ["white", "white", "white", "white"];
