@@ -14,25 +14,34 @@ changeColor(2, 2, buttons[2])
 changeColor(3, 3, buttons[3])
 
 buttons[0].addEventListener("click", ()=>{
-    changeColor(1, 1, buttons[1]);
+    changeColor(1, 1, buttons[1], 1);
     updateDisplay()
     if(returnGameComplete() == true){
-
+        gameComplete();
     }
 })
 buttons[1].addEventListener("click", ()=>{
-    changeColor(2, 2, buttons[2]);
-    changeColor(0, 0, buttons[0]);
+    changeColor(2, 2, buttons[2], 2);
+    changeColor(0, 0, buttons[0], 0);
     updateDisplay()
+    if(returnGameComplete() == true){
+        gameComplete();
+    }
 })
 buttons[2].addEventListener("click", ()=>{
-    changeColor(3, 3, buttons[3]);
-    changeColor(1, 1, buttons[1]);
+    changeColor(3, 3, buttons[3], 3);
+    changeColor(1, 1, buttons[1], 1);
     updateDisplay()
+    if(returnGameComplete() == true){
+        gameComplete();
+    }
 })
 buttons[3].addEventListener("click", ()=>{
-    changeColor(2, 2, buttons[2]);
+    changeColor(2, 2, buttons[2], 2);
     updateDisplay()
+    if(returnGameComplete() == true){
+        gameComplete();
+    }
 })
 
 
@@ -84,5 +93,7 @@ function returnGameComplete(){
 function gameComplete(){
     completeDis.style.opacity = "1";
     completeDis.innerHTML = "<h1>YOU DID IT!!!!!</h1>";
-    completeDis.style.zIndex = "100";
+    completeDis.style.zIndex = "0";
+    completeDis.style.height = "100vh";
+    completeDis.style.height = "100vw";
 }
