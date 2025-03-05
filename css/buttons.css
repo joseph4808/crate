@@ -35,6 +35,6 @@ body {
 
 .yay {
     transition: all 2s ease 1s;
-    position relative;
+    position absloute;
 }
 
