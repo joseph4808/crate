@@ -2,6 +2,8 @@ const buttons = document.querySelectorAll(".button");
 const display = document.querySelector(".display")
 const buttonDiv = document.querySelector(".buttons")
 const completeDis = document.querySelector(".complete")
+const yay = document.querySelector(".yay")
+
 
 var num = [getRndInteger(1, 5), getRndInteger(1, 5), getRndInteger(1, 5), getRndInteger(1, 5)];
 var color = ["white", "white", "white", "white"];
@@ -91,9 +93,12 @@ function returnGameComplete(){
 }
 
 function gameComplete(){
-    completeDis.style.opacity = "1";
-    completeDis.innerHTML = "<h1>YOU DID IT!!!!!</h1>";
+    completeDis.style.opacity = ".8";
+    completeDis.innerHTML = "<h1 class="yay">YOU DID IT!!!!!</h1>";
     completeDis.style.zIndex = "0";
     completeDis.style.height = "100vh";
     completeDis.style.height = "100vw";
+    yay.style.opacity: 1;
+    
+
 }
