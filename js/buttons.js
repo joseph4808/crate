@@ -99,7 +99,5 @@ function gameComplete(){
     completeDis.style.height = "100vh";
     completeDis.style.height = "100vw";
     yay.style.opacity = "1";
-    yay.style.top = "50px"
-
-
+    yay.style.top = "50px";
 }
