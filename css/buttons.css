@@ -25,17 +25,17 @@ body {
 .complete {
     justify-content: center;
     position: absolute;
-    opacity: 1;
-    height: 20vh;
-    width: 20vw;
+    opacity: 0;
+    height: 0vh;
+    width: 0vw;
     background-color: white;
     z-index: 100;
     transition: opacity 1s ease .2s;
 }
 
 .complete .yay {
-    opacity: 1;
-    /* transition: opacity 2s ease 2s; */
+    opacity: 0;
+    transition: opacity 2s ease 2s;
     background-color: red;
     position: relative;
 }
