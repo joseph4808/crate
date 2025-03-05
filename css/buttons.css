@@ -37,7 +37,7 @@ body {
     width: 0vw;
     background-color: white;
     z-index: 100;
-    transition: opacity 1s ease .2s;
+    transition: all 1s ease .2s;
 }
 
 
