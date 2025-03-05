@@ -22,6 +22,13 @@ body {
     margin: 10px;
 }
 
+.complete .yay {
+    opacity: 0;
+    transition: opacity 2s ease 2s;
+    background-color: red;
+    position: relative;
+}
+
 .complete {
     justify-content: center;
     position: absolute;
@@ -33,10 +40,4 @@ body {
     transition: opacity 1s ease .2s;
 }
 
-.complete .yay {
-    opacity: 0;
-    transition: opacity 2s ease 2s;
-    background-color: red;
-    position: relative;
-}
 

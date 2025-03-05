@@ -100,4 +100,5 @@ function gameComplete(){
     yay.style.opacity = "1";
     completeDis.style.opacity = ".8";
     yay.style.top = "50vh";
+    yay.style.left = "50vw"
 }
