@@ -5,6 +5,7 @@ const buttonDiv = document.querySelector(".buttons")
 var num = [getRndInteger(1, 5), getRndInteger(1, 5), getRndInteger(1, 5), getRndInteger(1, 5)];
 var color = ["white", "white", "white", "white"];
 var displayCount = 0;
+var 
 
 changeColor(0, 0, buttons[0])
 changeColor(1, 1, buttons[1])
