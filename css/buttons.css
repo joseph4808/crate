@@ -22,6 +22,11 @@ body {
     margin: 10px;
 }
 
+.buttons {
+    position: absolute;
+}
+
 .button {
-    
+    position: relative;
+    right: 50px;
 }

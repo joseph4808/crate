@@ -64,5 +64,5 @@ function getRndInteger(min, max) {
 
 function updateDisplay(){
     displayCount++;
-    display.innerText = `Clicks ${displayCount}`;
+    display.innerText = `Clicks: ${displayCount}`;
 }
