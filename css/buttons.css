@@ -26,4 +26,5 @@ body {
 
 .buttons {
     display: flex;
+    heught: 100vh;
 }
