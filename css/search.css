@@ -40,15 +40,9 @@ body {
 }
 
 .searchDiv .searchInput:focus {
-    background: white;
-    color: black;
-    border-color: black;
     outline: none;
 }
 
 .searchDiv .searchButton:focus {
-    background: white;
-    color: black;
-    border-color: black;
     outline: none;
 }
