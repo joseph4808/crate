@@ -14,7 +14,6 @@
     cursor: pointer;
     left: 0px;
     margin: 0;
-    z-index: 10;
 }
 
 body {
@@ -39,6 +38,7 @@ body {
     height: 50px;
     width: 0px;
     margin: 0;
+    z-index: -1;
 }
 
 .searchDiv .searchInput:focus {
@@ -47,4 +47,9 @@ body {
 
 .searchDiv .searchButton:focus {
     outline: none;
+}
+
+.searchDiv.active .searchInput{
+    width: 200px;
+    
 }
