@@ -29,6 +29,7 @@ body {
 .searchDiv{
     position: relative;
     height: 50px;
+    
 }
 
 .searchDiv .searchInput {
@@ -55,5 +56,5 @@ body {
 .searchDiv.active .searchInput{
     width: 200px;
     left: 0px;
-
+    margin: 0;
 }
