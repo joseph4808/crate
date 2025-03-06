@@ -22,7 +22,7 @@ body {
     margin: 10px;
 }
 
-.complete .yay {
+.yay {
     opacity: 0;
     transition: opacity 2s ease 2s;
     background-color: red;
@@ -37,7 +37,7 @@ body {
     width: 0vw;
     background-color: white;
     z-index: 100;
-    transition: all 1s ease .2s;
+    transition: opacity 1.5s ease .2s;
 }
 
 
