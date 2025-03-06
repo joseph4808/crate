@@ -29,7 +29,7 @@ body {
 .searchDiv{
     position: relative;
     height: 50px;
-    
+    width: 200px;
 }
 
 .searchDiv .searchInput {
