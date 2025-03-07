@@ -41,6 +41,6 @@ body {
 
 .complete .yay {
     opacity: 0;
-    transition: opacity .5s ease-in;
+    transition-delay: 1s;
     position: absolute;
 }

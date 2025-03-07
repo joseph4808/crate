@@ -95,7 +95,7 @@ function returnGameComplete(){
 function gameComplete(){
     completeDis.style.zIndex = "100";
     completeDis.style.height = "80vh";
-    completeDis.style.width = "100vw";
+    completeDis.style.width = "80vw";
     completeDis.style.opacity = ".8";
     yay.innerHTML = "YOU DID IT!!!!!";
     yay.style.opacity = 0;
