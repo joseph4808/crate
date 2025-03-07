@@ -101,5 +101,5 @@ function gameComplete(){
     yay.style.opacity = 0;
     yay.style.opacity = 1;
     yay.style.top = "50px";
-    yay.style.left = "200px";
+    yay.style.left = "40px";
 }
