@@ -42,5 +42,7 @@ body {
 .complete .yay {
     opacity: 0;
     transition-delay: 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
     position: absolute;
 }
