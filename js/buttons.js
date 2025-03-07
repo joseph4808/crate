@@ -10,14 +10,14 @@ var color = ["white", "white", "white", "white"];
 var displayCount = 0;
 var colorId = [0, 0, 0, 0];
 
-changeColor(0, 0, buttons[0], 0)
-changeColor(1, 1, buttons[1], 1)
-changeColor(2, 2, buttons[2], 2)
-changeColor(3, 3, buttons[3], 3)
+changeColor(0, 0, buttons[0], 0);
+changeColor(1, 1, buttons[1], 1);
+changeColor(2, 2, buttons[2], 2);
+changeColor(3, 3, buttons[3], 3);
 
 buttons[0].addEventListener("click", ()=>{
     changeColor(1, 1, buttons[1], 1);
-    updateDisplay()
+    updateDisplay();
     if(returnGameComplete() == true){
         gameComplete();
     }
@@ -25,7 +25,7 @@ buttons[0].addEventListener("click", ()=>{
 buttons[1].addEventListener("click", ()=>{
     changeColor(2, 2, buttons[2], 2);
     changeColor(0, 0, buttons[0], 0);
-    updateDisplay()
+    updateDisplay();
     if(returnGameComplete() == true){
         gameComplete();
     }
@@ -33,14 +33,14 @@ buttons[1].addEventListener("click", ()=>{
 buttons[2].addEventListener("click", ()=>{
     changeColor(3, 3, buttons[3], 3);
     changeColor(1, 1, buttons[1], 1);
-    updateDisplay()
+    updateDisplay();
     if(returnGameComplete() == true){
         gameComplete();
     }
 })
 buttons[3].addEventListener("click", ()=>{
     changeColor(2, 2, buttons[2], 2);
-    updateDisplay()
+    updateDisplay();
     if(returnGameComplete() == true){
         gameComplete();
     }
