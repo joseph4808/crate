@@ -3,21 +3,27 @@
 }
 
 .searchDiv{
+    display: flex;
     position: relative;
-    height: 50px;
-}
-
-.searchDiv .searchButton {
-    postition: absolute;
-    color: red;
+    height: 59px;
     border-color: red;
     border-width: 5px;
     border-style: inset;
+}
+
+.searchDiv .searchButton {
+    position: absolute;
+    color: red;
     width: 50px;
-    height: 50px;
+    height: 49px;
     background: black;
     cursor: pointer;
     left: 0px;
+    top: 0;
+    margin: 0px;
+    outline: none;
+    border: none;
+    transition: transform 2s ease;
 }
 
 body {
@@ -32,27 +38,25 @@ body {
 }
 
 .searchDiv .searchInput {
-    position: absolute;
     color: red;
     background-color: black;
-    border-style: inset;
-    border-color: red;
     padding: 20px;
-    border-width: 5px;
     height: 50px;
-    width: 0px;
+    border: none;
+    width: 50px;
+    transition: width  2s ease;
+    margin: 0;
+    z-index: 0;
 }
 
 .searchDiv .searchInput:focus {
     outline: none;
 }
 
-.searchDiv .searchButton:focus {
-    outline: none;
+.searchDiv.active .searchButton {
+    transform: translateX(198px);
 }
 
 .searchDiv.active .searchInput{
-    width: 200px;
-    left: 0px;
-    margin: 0;
+    width: 250px;
 }
