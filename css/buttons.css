@@ -24,8 +24,7 @@ body {
 
 .yay {
     opacity: 0;
-    transition: opacity 2s ease 2s;
-    background-color: red;
+    transition: opacity 1s ease 1s;
     position: relative;
 }
 
@@ -37,7 +36,7 @@ body {
     width: 0vw;
     background-color: white;
     z-index: 100;
-    transition: opacity 1.5s ease .2s;
+    transition: opacity 1s ease .4s;
 }
 
 
