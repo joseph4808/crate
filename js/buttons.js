@@ -16,30 +16,30 @@ changeColor(2, 2, buttons[2], 2);
 changeColor(3, 3, buttons[3], 3);
 
 buttons[0].addEventListener("click", ()=>{
-    changeColor(1, 1, buttons[1], 1);
+    colorChangeCondensed(1);
     updateDisplay();
     if(returnGameComplete() == true){
         gameComplete();
     }
 })
 buttons[1].addEventListener("click", ()=>{
-    changeColor(2, 2, buttons[2], 2);
-    changeColor(0, 0, buttons[0], 0);
+    colorChangeCondensed(2);
+    colorChangeCondensed(0);
     updateDisplay();
     if(returnGameComplete() == true){
         gameComplete();
     }
 })
 buttons[2].addEventListener("click", ()=>{
-    changeColor(3, 3, buttons[3], 3);
-    changeColor(1, 1, buttons[1], 1);
+    colorChangeCondensed(3);
+    colorChangeCondensed(1);
     updateDisplay();
     if(returnGameComplete() == true){
         gameComplete();
     }
 })
 buttons[3].addEventListener("click", ()=>{
-    changeColor(2, 2, buttons[2], 2);
+    colorChangeCondensed(2);
     updateDisplay();
     if(returnGameComplete() == true){
         gameComplete();
@@ -101,4 +101,9 @@ function gameComplete(){
     yay.style.opacity = 1;
     yay.style.top = "50px";
     yay.style.left = "200px";
+}
+
+function colorChangeCondensed(number){
+    var numTemp = number;
+    changeColor(numTemp, numTemp, buttons[numTemp], numTemp)
 }
