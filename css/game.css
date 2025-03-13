@@ -1,1 +1,11 @@
+*{
+    box-sizing: border-box;
+}
 
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
