@@ -7,12 +7,12 @@ let numbers = [0, 0, 0, 0];
 let numberLog = [];
 
 button.forEach((buttons)=>{
-    const number = document.getElementById(`btn${++btnIncrement}`)
+    const number = document.getElementById(`${++btnIncrement}btn`)
     buttons = number;
     numbers[btnIncrement-1] = getRndInteger(1, 9);
     buttons.innerHTML = numbers[btnIncrement-1];
     buttons.addEventListener("click", ()=>{
-        numberLog.push(numbers[parseInt(buttons - "btn")-1]);
+        numberLog.push(numbers[parseInt(buttons)-1]);
         changeNumbers();
         })
     })
