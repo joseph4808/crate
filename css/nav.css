@@ -95,3 +95,23 @@ body {
 .hero *{
     position: relative;
 }
+
+.nav.active {
+    background-color: lavender;
+    position: sticky;
+    z-index: 100;
+}
+
+.nav.active a {
+    color: black;
+
+}
+
+.nav.active .container{
+    padding: 10px 0;
+}
+
+.nav a.current, .nav a:hover{
+    color: indigo;
+    font-weight: 20px;
+}

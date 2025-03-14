@@ -3,23 +3,23 @@ const text = document.querySelector(".text");
 
 let btnIncrement = 0;
 let btnIncrementTwo = 0;
-let numbers = [0, 0, 0, 0]
-let numLog = [];
+let numbers = [0, 0, 0, 0];
+let numberLog = [];
 
 button.forEach((buttons)=>{
     const number = document.getElementById(`btn${++btnIncrement}`)
     buttons = number;
     numbers[btnIncrement-1] = getRndInteger(1, 9);
     buttons.innerHTML = numbers[btnIncrement-1];
-    number.addEventListener("click", ()=>{
-        numLog.push(numbers[parseInt(number)-1]);
-        text.innerHTML = numlog;
-        button.forEach((btn)=>{
-            numbers[btnIncrementTwo] = getRndInteger(1, 9);
-            btn.innerHTML = numbers[btnIncrementTwo++];
+    buttons.addEventListener("click", ()=>{
+        numberLog.push(numbers[parseInt(buttons)-1]);
+        changeNumbers();
         })
     })
 });
+
+
+
 
 
 function getRndInteger(min, max) {
@@ -27,3 +27,11 @@ function getRndInteger(min, max) {
 }
 
 
+
+function changeNumbers(){
+    button.forEach((btn)=>{
+        numbers[btnIncrementTwo] = getRndInteger(1, 9);
+        btn.innerHTML = numbers[btnIncrementTwo];
+        btnIncrementTwo++;
+    }
+}
