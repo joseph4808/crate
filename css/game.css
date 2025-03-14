@@ -3,9 +3,40 @@
 }
 
 body {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     height: 100vh;
     margin: 0;
 }
+
+.display {
+    position: relative;
+}
+
+.number {
+    width: 60px;
+    height: 60px;
+    margin: 15px;
+}
+
+.top {
+    position: relative;
+    top: 0;
+}
+.bottom {
+    position: relative;
+    bottom: 0;
+ }
+
+ .text{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    margin: 0;
+ }
+
+ .text .current {
+ }
