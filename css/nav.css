@@ -18,11 +18,12 @@ body {
 }
 
 .nav {
-    position: static;
+    position: sticky;
     background-color: rgb(15,15,15);
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
 }
 
 .nav .container {
@@ -98,8 +99,6 @@ body {
 
 .nav.active {
     background-color: lavender;
-    position: sticky;
-    z-index: 100;
 }
 
 .nav.active a {
@@ -108,7 +107,7 @@ body {
 }
 
 .nav.active .container{
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .nav a.current, .nav a:hover{
