@@ -15,8 +15,7 @@ button.forEach((buttons)=>{
         numberLog.push(numbers[parseInt(buttons)-1]);
         changeNumbers();
         })
-    })
-});
+    });
 
 
 
