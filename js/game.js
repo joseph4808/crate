@@ -3,14 +3,14 @@ const text = document.querySelector(".text");
 
 let btnIncrement = 0;
 let btnIncrementTwo = 0;
-let numbers = [];
+let numbers = [0, 0, 0, 0];
 let numberLog = [];
 
 button.forEach((buttons)=>{
-    const number = document.getElementById(`btn${++btnIncrement}`);
+    const number = document.getElementById(`${++btnIncrement}btn`)
     buttons = number;
-    numbers.push(getRndInteger(1, 9));
-    number.innerHTML = numbers[numbers.length - 1];
+    numbers[btnIncrement-1] = getRndInteger(1, 9);
+    buttons.innerHTML = numbers[btnIncrement-1];
     });
 
 
