@@ -7,7 +7,7 @@ let numbers = [0, 0, 0, 0];
 let numberLog = [];
 
 button.forEach((buttons)=>{
-    const number = document.getElementById(`btn${++btnIncrement}`)
+    const number = document.getElementById(`btn${++btnIncrement}`);
     buttons = number;
     numbers[btnIncrement-1] = getRndInteger(1, 9);
     buttons.innerHTML = numbers[btnIncrement-1];
