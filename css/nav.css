@@ -115,3 +115,7 @@ body {
     color: indigo;
     font-weight: 20px;
 }
+
+.nav {
+    transition: all 2s ease;
+}
