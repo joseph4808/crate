@@ -10,7 +10,7 @@ button.forEach((buttons)=>{
     buttons = number;
     numbers[btnIncrement-1] = getRndInteger(1, 9);
     buttons.innerHTML = numbers[btnIncrement-1];
-    buttons.addEventListener("click", ()=>{
+    number.addEventListener("click", ()=>{
         numLog.push(numbers[parseInt(buttons)-1]);
         button.forEach((btn)=>{
             numbers[btnIncrementTwo] = getRndInteger(1, 9);
