@@ -6,12 +6,15 @@ const numberLog = [];
 let btnIncrement = 0;
 let btnIncrementTwo = 0;
 
+numberChange();
+
 button.forEach((buttons)=>{
     const number = document.getElementById(`${++btnIncrement}btn`)
     buttons = number;
+
 });
 
-numberChange();
+
 
 
 
@@ -29,11 +32,13 @@ function getRndInteger(min, max) {
 }
 
 function buttonPress(btn){
+
     button[btn].addEventListener(()=>{
+        numberLog.push(numbers[btn]);
         numberChange();
         button.forEach((button)=>{
             button.innerHTML = numbers[btnIncrementTwo++]
         });
-        
+        btnIncrementTwo = 0;
     });
 }
