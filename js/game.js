@@ -10,7 +10,7 @@ numberChange();
 
 button.forEach((buttons)=>{
     const btn = document.getElementById(buttons);
-    btn.innerHTML
+    btn.innerHTML = 
 });
 
 
