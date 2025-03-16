@@ -11,14 +11,18 @@ button.forEach((buttons)=>{
     buttons = number;
 });
 
-numbers.forEach((num)=>{
-    num = getRndInteger(1, 9);
-});
+numberChange();
 
 
 
 
 
+
+function numberChange(){
+    numbers.forEach((num)=>{
+        num = getRndInteger(1, 9);
+    });
+}
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -26,6 +30,9 @@ function getRndInteger(min, max) {
 
 function buttonPress(btn){
     button[btn].addEventListener(()=>{
-        
+        numberChange();
+        button.forEach((button)=>{
+            button.innerHTML = numbers[]
+        })
     });
 }
