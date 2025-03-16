@@ -15,7 +15,10 @@ button.forEach((buttons)=>{
 });
 
 
-
+buttonPress(0)
+buttonPress(1)
+buttonPress(2)
+buttonPress(3)
 
 
 
