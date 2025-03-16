@@ -35,7 +35,7 @@ function getRndInteger(min, max) {
 }
 
 function buttonPress(btn){
-    button[btn].addEventListener(()=>{
+    button[btn].addEventListener("click", ()=>{
         numberLog.push(numbers[btn]);
         numberChange();
         button.forEach((button)=>{
