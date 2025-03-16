@@ -13,7 +13,7 @@ button.forEach((buttons)=>{
 
 numbers.forEach((num)=>{
     num = getRndInteger(1, 9);
-})
+});
 
 
 
@@ -25,5 +25,7 @@ function getRndInteger(min, max) {
 }
 
 function buttonPress(btn){
-    
+    button[btn].addEventListener(()=>{
+        
+    });
 }
