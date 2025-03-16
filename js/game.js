@@ -32,7 +32,8 @@ function buttonPress(btn){
     button[btn].addEventListener(()=>{
         numberChange();
         button.forEach((button)=>{
-            button.innerHTML = numbers[]
-        })
+            button.innerHTML = numbers[btnIncrementTwo++]
+        });
+        
     });
 }
