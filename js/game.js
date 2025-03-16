@@ -10,7 +10,7 @@ numberChange();
 
 button.forEach((buttons)=>{
     const btn = document.getElementById(buttons);
-    btn.innerHTML = 
+    btn.innerHTML = getRndInteger(1, 9);
 });
 
 
@@ -25,7 +25,6 @@ buttonPress(3)
 
 function numberChange(){
     numbers.forEach((num)=>{
-        num = getRndInteger(1, 9);
     });
 }
 
