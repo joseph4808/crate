@@ -9,9 +9,9 @@ let btnIncrementTwo = 0;
 numberChange();
 
 button.forEach((buttons)=>{
-    const number = document.getElementById(`${++btnIncrement}btn`)
+    const number = document.getElementById(`btn${++btnIncrement}`)
     buttons = number;
-
+    buttons.innerHTML = numbers[btnIncrement - 1];
 });
 
 
