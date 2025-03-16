@@ -1,4 +1,4 @@
-const button = ["", "", "", ""];
+const button = ["btn1", "btn2", "btn3", "btn4"];
 const text = document.querySelector(".text");
 const numbers = [0, 0, 0, 0];
 const numberLog = [];
@@ -9,9 +9,8 @@ let btnIncrementTwo = 0;
 numberChange();
 
 button.forEach((buttons)=>{
-    const number = document.getElementById(`btn${++btnIncrement}`)
-    buttons = number;
-    buttons.innerHTML = numbers[btnIncrement - 1];
+    const btn = document.getElementById(buttons);
+    btn.innerHTML
 });
 
 
