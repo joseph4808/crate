@@ -35,7 +35,6 @@ function getRndInteger(min, max) {
 }
 
 function buttonPress(btn){
-
     button[btn].addEventListener(()=>{
         numberLog.push(numbers[btn]);
         numberChange();
