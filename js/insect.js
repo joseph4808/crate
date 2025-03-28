@@ -8,9 +8,9 @@ const message = document.getElementById("message");
 
 let seconds = 0;
 let score = 0;
-let selectedInsect = {}
+let selectedInsect = {};
 
-startBtn.addEventListener("click", ()=>{
+startBtn.addEventListener("click", () => {
     screens[0].classList.add("up")
 })
 
