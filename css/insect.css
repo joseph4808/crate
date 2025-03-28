@@ -36,7 +36,7 @@ body {
     color: #3a5f3d;
     padding: 15px 20px;
     cursor: pointer;
-    fontfamily: inherit;
+    font-family: inherit;
 }
 
 .btn:hover {
