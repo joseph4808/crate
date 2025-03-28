@@ -18,11 +18,14 @@ body {
 }
 
 .nav {
-    position: sticky;
+    position: fixed;
     background-color: rgb(15,15,15);
     top: 0;
     left: 0;
     right: 0;
+    transition-property: all;
+    transition-behavior: ease-out;
+    transition-duration: 1s;
     z-index: 100;
 }
 
@@ -31,6 +34,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    transition-property: all;
+    transition-behavior: ease-out;
+    transition-duration: 1s;
 }
 
 .nav ul {
@@ -67,7 +73,6 @@ body {
     background-image: url(../images/flowers.avif);
     background-size: cover;
     background-repeat: no-repeat;
-    background-postion: bottom center;
     position: relative;
 }
 
@@ -107,14 +112,13 @@ body {
 }
 
 .nav.active .container{
-    padding: 20px 0;
+    transition-property: all;
+    transition-behavior: ease-out;
+    transition-duration: 1s;
+    padding: 8px 0;
 }
 
 .nav a.current, .nav a:hover{
     color: indigo;
-    font-weight: 20px;
-}
-
-.nav {
-    transition: all 2s ease;
+    font-weight: 20;
 }
