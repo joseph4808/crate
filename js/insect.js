@@ -11,8 +11,8 @@ let score = 0;
 let selectedInsect = {}
 
 startBtn.addEventListener("click", ()=>{
-    screens[0].classList.add("up");
-});
+    screens[0].classList.add("up")
+})
 
 
 
