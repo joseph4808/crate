@@ -19,8 +19,8 @@ function createBall(){
     ball.style.borderRadius = "50%"
     ball.style.backgroundColor = "lightgreen"
     ball.style.position= "absolute"
-    ball.style.top = `${(windowHeight/2) - ballRadius}px`;
-    ball.style.left = `${(windowWidth/2) - ballRadius}px`;
+    ball.style.top = `${ballYPosition}px`;
+    ball.style.left = `${ballXPosition}px`;
 }
 
 
@@ -28,12 +28,13 @@ function createBall(){
 function moveBall(){
     ballXPosition += ballSpeed * ballXDirection;
     ball.style.left = `${ballXPosition}px`;
-    if(ballXPosition >= (windowWidth * .995) -(ballRadius * 2) || ballXPosition <= 0){
-        ballXDirection *= -1;
-    }
 
     ballYPosition += ballSpeed * ballYDirection;
     ball.style.top = `${ballYPosition}px`;
+
+    if(ballXPosition >= (windowWidth * .995) -(ballRadius * 2) || ballXPosition <= 0){
+        ballXDirection *= -1;
+    }
     if(ballYPosition >= (windowHeight * .99) -(ballRadius * 2) || ballYPosition <= 0){
         ballYDirection *= -1;
     }
