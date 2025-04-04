@@ -123,6 +123,27 @@
     left: -4%;
 }
 
+#cloud-two {
+    width: 60%;
+    height: 27%;
+    top: 4%;
+    left: 0%;
+}
+
+#cloud-three {
+    width: 30%;
+    height: 17%;
+    top: 50%;
+    left: 80%;
+}
+
+#cloud-four {
+    width: 40%;
+    height: 17%;
+    top: 60%;
+    left: 700%;
+}
+
 
 
 
