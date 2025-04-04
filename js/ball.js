@@ -28,13 +28,13 @@ function createBall(){
 function moveBall(){
     ballXPosition += ballSpeed * ballXDirection;
     ball.style.left = `${ballXPosition}px`;
-    if(ballXPosition >= windowWidth -(ballRadius * 2) || ballXPosition <= 0){
+    if(ballXPosition >= (windowWidth * .995) -(ballRadius * 2) || ballXPosition <= 0){
         ballXDirection *= -1;
     }
 
     ballYPosition += ballSpeed * ballYDirection;
-    ball.style.left = `${ballXPosition}px`;
-    if(ballYPosition >= windowHeight -(ballRadius * 2) || ballYPosition <= 0){
+    ball.style.top = `${ballYPosition}px`;
+    if(ballYPosition >= (windowHeight * .99) -(ballRadius * 2) || ballYPosition <= 0){
         ballYDirection *= -1;
     }
 
