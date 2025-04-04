@@ -150,10 +150,12 @@
     height: 1vw;
     background-color: yellow;
     border-radius: 50%;
-    border-top-right-width: 0;
-    border-top-left-width: 0;
-    border-bottom-left-width: 0;
-    border-bottom-right-width: 15vw;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 15vw;
+    border-right-width: 15vw;
+    border-style: solid;
+    border-color: yellow;
 }
 
 
