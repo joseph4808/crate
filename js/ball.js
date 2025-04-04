@@ -1,7 +1,8 @@
 const ball = document.createElement("div");
-var ballRadius = 70
+const ballRadius = 70
 const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
+let 
 
 
 createBall();
@@ -16,3 +17,16 @@ function createBall(){
     ball.style.top = `${(windowHeight/2) - ballRadius}px`;
     ball.style.left = `${(windowWidth/2) - ballRadius}px`;
 }
+
+
+
+function moveBall(){
+
+    ball.style.left = ballLeft(3);
+
+}
+
+function ballLeft(num){
+    ball.style.left = `${(windowWidth/2) - ballRadius + num}px`;
+}
+
