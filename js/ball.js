@@ -3,12 +3,14 @@ const ballRadius = 70
 const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
 let ballXPosition = (windowWidth/2) - ballRadius;
-let ballSpeed = 6;
+let ballSpeed = 10;
 let ballXDirection = 1;
+var ballYDirection = 1;
+var ballYPosition = (windowHeight/2) - ballRadius;
 
 
 createBall();
-setInterval(moveBall(), 100);
+setInterval(moveBall, 50);
 
 function createBall(){
     document.body.appendChild(ball)
@@ -26,8 +28,14 @@ function createBall(){
 function moveBall(){
     ballXPosition += ballSpeed * ballXDirection;
     ball.style.left = `${ballXPosition}px`;
-    if(ballXPosition > windowWidth -(ballRadius * 2)){
-        ballXDirection = -1;
+    if(ballXPosition >= windowWidth -(ballRadius * 2) || ballXPosition <= 0){
+        ballXDirection *= -1;
+    }
+
+    ballYPosition += ballSpeed * ballYDirection;
+    ball.style.left = `${ballXPosition}px`;
+    if(ballYPosition >= windowHeight -(ballRadius * 2) || ballYPosition <= 0){
+        ballYDirection *= -1;
     }
 
 }
