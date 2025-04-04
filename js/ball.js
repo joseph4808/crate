@@ -24,17 +24,11 @@ function createBall(){
 
 
 function moveBall(){
-
-    ballXPosition =+ ballSpeed * ballXDirection;
+    ballXPosition += ballSpeed * ballXDirection;
     ball.style.left = `${ballXPosition}px`;
     if(ballXPosition > windowWidth -(ballRadius * 2)){
         ballXDirection = -1;
     }
-
-}
-
-function ballLeft(num){
-    ball.style.left = `${(windowWidth/2) - ballRadius + num}px`;
 
 }
 
