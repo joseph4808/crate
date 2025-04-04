@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.background {
+    background-color: #d0e9f4;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.background .test {
+    background-color: red;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    right: 40%;
+    opacity: 0;
+}
+
+.background .main {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+}
+
+.main .detail-sand-one{
+
+}
+
+
+
+.sand {
+    background-color: #e4d290;
+}
+
+.water{
+    background-color: #90a5f2;
+}
+
+.ocean{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    top: 50%;
+}
+
+.ocean .ocean-detail{
+    position: absolute;
+    background-color: inherit;
+    border-bottom-color: white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5vh;
+    opacity: .9;
+}
+
+.ocean #water-one{
+    width: 30%;
+    height: 50%;
+    top: 70%;
+    left: -6%;
+    z-index: 50;
+}
+
+.ocean #water-two{
+    width: 25%;
+    height: 60%;
+    top: 66%;
+    left: 23%;
+    z-index: 48;
+}
+
+.ocean #water-three{
+    width: 40%;
+    height: 50%;
+    top: 66%;
+    left: 35%;
+}
+
+.ocean #water-four{
+    width: 25%;
+    height: 60%;
+    top: 66%;
+    left: 60%;
+    z-index: 49;
+}
+
+.ocean #water-five{
+    width: 45%;
+    height: 70%;
+    top: 66%;
+    left: 80%;
+    z-index: 51;
+}
+
+.sky {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+}
+
+.cloud {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#cloud-one {
+    width: 40%;
+    height: 30%;
+    top: 8%;
+    left: -4%;
+}
+
+
+
+
+
