@@ -8,7 +8,7 @@ let ballXDirection = 1;
 
 
 createBall();
-setInterval(moveBall(), 100)
+setInterval(moveBall(), 100);
 
 function createBall(){
     document.body.appendChild(ball)
