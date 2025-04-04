@@ -144,6 +144,18 @@
     left: 70%;
 }
 
+.sun {
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    background-color: yellow;
+    border-radius: 50%;
+    border-top-right-width: 0;
+    border-top-left-width: 0;
+    border-bottom-left-width: 0;
+    border-bottom-right-width: 15vw;
+}
+
 
 
 
