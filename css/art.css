@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -161,7 +165,8 @@
     border-style: solid;
     border-color: yellow;
     top: -15vh;
-    left: -12vw;
+    left: -8vw;
+    z-index: 12;
 }
 
 
