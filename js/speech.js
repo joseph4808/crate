@@ -1,4 +1,4 @@
-const main = document.queryselector("main");
+const main = document.querySelector("main");
 const voicesSelect = document.getElementById("voices");
 const textarea = document.getElementById("text");
 const readBtn = document.getElementById('read');
@@ -57,7 +57,7 @@ const data = [
 
 ]
 
-data.forEach(data, createBox(data))
+data.forEach(createBox)
 
 function createBox(item){
     console.log(item);
