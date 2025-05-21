@@ -7,51 +7,51 @@ const closeBtn = document.getElementById("close");
 
 const data = [
     {
-        image: "../drink.jpg",
+        image: "../images/drink.jpg",
         text: "I'm Thirsty"
     },
     {
-        image: "../food.jpg",
+        image: "../images/food.jpg",
         text: "I'm Hungry"
     },
     {
-        image: "../tired.jpg",
+        image: "../images/tired.jpg",
         text: "I'm Tired"
     },
     {
-        image: "../hurt.jpg",
+        image: "../images/hurt.jpg",
         text: "I'm Hurt"
     },
     {
-        image: "../happy.jpg",
+        image: "../images/happy.jpg",
         text: "I'm Happy"
     },
     {
-        image: "../angry.jpg",
+        image: "../images/angry.jpg",
         text: "I'm Angry"
     },
     {
-        image: "../sad.jpg",
+        image: "../images/sad.jpg",
         text: "I'm Sad"
     },
     {
-        image: "../scared.jpg",
+        image: "../images/scared.jpg",
         text: "I'm Scared"
     },
     {
-        image: "../outside.jpg",
+        image: "../images/outside.jpg",
         text: "I Want To Go Outside"
     },
     {
-        image: "../home.jpg",
+        image: "../images/home.jpg",
         text: "I Want To Go Home"
     },
     {
-        image: "../school.jpg",
+        image: "../images/school.jpg",
         text: "I Want To Go To School"
     },
     {
-        image: "../grandma.jpg",
+        image: "../images/grandma.jpg",
         text: "I Want To Go To Grandma's"
     },
 
@@ -60,5 +60,11 @@ const data = [
 data.forEach(createBox)
 
 function createBox(item){
-    console.log(item);
+    const box = document.createElement("div");
+    box.classList.add("box")
+    box.innerHTML = `
+        <img src="${item.image}" alt="${item.text}"/>
+        <p class="info"> ${item.text}</p>
+    `
+    main.appendChild(box);
 }
