@@ -1,4 +1,4 @@
-const main = document.querySelector("main");
+ const main = document.querySelector("main");
 const voicesSelect = document.getElementById("voices");
 const textarea = document.getElementById("text");
 const readBtn = document.getElementById('read');
@@ -68,3 +68,8 @@ function createBox(item){
     `
     main.appendChild(box);
 }
+
+
+toggleBtn.addEventListener('click', () => {
+    document.getElementById('text-box')
+})
